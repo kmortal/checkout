@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="./devchallenges.png" type="image/x-icon">
+  <title>Checkout</title>
+</head>
+<body>
+  <main>
+    <h1>Checkout</h1>
+
+    <article>
+
+      <h2>Contact information</h2>
+
+    <form action="" id="contactForm">
+      <fieldset>
+          <label>E-mail</label>
+          <input type="text" placeholder="Enter your email..">
+
+          <label>Phone</label>
+          <input type="text" placeholder="Enter your phone..">
+      </fieldset>
+    </form>
+      
+    <h2>Shipping address</h2>
+
+      <form action="" id="shippingForm">
+        <fieldset>
+          <label>Full name</label>
+          <input type="text" value="Rodney Cotton" disabled>
+
+          <label>Address</label>
+          <input type="text" placeholder="Your address.." id="teste">
+
+          <label>City</label>
+          <input type="text" placeholder="Your city..">
+
+          <label>Country</label>
+          <datalist id="Countries">
+            <option value="Brasil"></option>
+            <option value="Portugal"></option>
+            <option value="EUA"></option>
+            <option value="Other"></option>
+          </datalist>
+          <input type="text" placeholder="Your country" list="Countries">
+
+          <label>Postal code</label>
+          <input type="text" placeholder="Your postal code..">
+        </fieldset>
+      </form>
+
+      <label>Save this information for next time</label>
+      <input type="checkbox">
+
+      <button type="submit">Continue</button>
+      <div id="preview">
+
+        <div id="products">
+
+          <article class="product">
+
+            <img src="./photo1.png" alt="Vintage Backbag">
+            <h3>Vintage Backbag</h3>
+            <h4>$54,99 <span>$94.99</span></h4>
+
+            <section class="buttons">
+
+              <div class="buttonUpper">
+                <button>-</button>
+              </div>
+
+              <p>0</p>
+
+              <div class="buttonLower">
+                <button>-</button>
+              </div>      
+
+            </section>
+
+          </article>
+
+          <article class="product">
+
+            <img src="./photo2.png">
+            <h3>Levi Shoes</h3>
+            <h4>$74,99 <span>$124.99</span></h4>
+
+            <section class="buttons">
+
+              <div class="buttonUpper">
+                <button>-</button>
+              </div>
+
+              <p>0</p>
+
+              <div class="buttonLower">
+                <button>-</button>
+              </div>   
+
+            </section>
+
+          </article>      
+
+        </div>  
+        
+        <article id="prices">
+          <section>
+            <p>Shipping</p>
+            <p>0</p>
+          </section>
+
+          <section>
+            <p>Total</p>
+            <p>0</p>
+          </section>
+        </article>
+      </div>
+
+
+
+    </article>
+  </main>
+</body>
+</html>
