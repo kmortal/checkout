@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+
+*{
+    font-family: 'Montserrat', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 1em 5em;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 300,
+  'GRAD' 0,
+  'opsz' 20;
+  color: #00000082;
+  margin: 0 0.25em;
+}
+
+h1{
+    font-size: 36px;
+    line-height: 44px;
+    color: #4E5150;
+    transform: rotate(-0.02deg);
+    margin-bottom: 1em;
+}
+
+h2{
+    font-size: 18px;
+    line-height: 22px;
+    color: #333333;
+    transform: rotate(-0.02deg);
+    margin: 1em 0;
+}
+
+fieldset p{
+    margin: 0.25em 0;
+}
+
+fieldset p, #checkbox{
+    font-size: 12px;
+    line-height: 15px;
+}
+
+button{
+    background: #F2994A;
+    border-radius: 12px;
+    color: white;
+    font-size: 16px;
+    line-height: 20px;
+    width: 9em;
+    height: 3em;
+    border: 0;
+    margin-top: 3em;
+    margin-left: 12em;
+}
+
+input{
+    font-size: 16px;
+    line-height: 20px;
+    color: #828282;
+}
+
+.buttons{
+    border: 1px solid #828282;
+    border-radius: 12px;
+    height: 2.5em;
+    width: 10em;
+    display: flex;
+    align-items: center;
+}
+
+.buttons p{
+    font-size: 16px;
+    line-height: 20px;
+    color: #333333;
+}
+
+.button {
+    width: 1.5em;
+    height: 1.5em;
+    background: #E0E0E0;
+    border-radius: 4px;
+}
+
+.button p{
+    text-align: center;
+}
+
+#productsContainer{
+    width: 21em;
+    height: 27em;
+    background: #F2F2F2;
+    border-radius: 12px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+
+    float: right;
+}
+
+.product{
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+    margin: 2em 1em;
+}
+
+.product h3{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: #4E5150;
+    transform: rotate(-0.02deg);
+
+    margin-bottom: 0.5em;
+}
+
+.product h4{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: #F2994A;
+    transform: rotate(-0.02deg);
+
+    margin-bottom: 0.5em;
+}
+
+.product span{
+    margin-left: 1em;
+}
+
+.product img{
+    width: 6em;
+    height: 6em;
+    background: #C4C4C4;
+    border-radius: 13px;
+    transform: rotate(-0.02deg);
+}
+
+.product .buttons{
+    display: flex;
+    justify-content: space-around;
+}
+
+.product span{
+    font-size: 12px;
+    line-height: 15px;
+    text-decoration-line: line-through;
+    color: #4E5150;
+    transform: rotate(-0.02deg);
+}
+
+.buttons p{
+    font-size: 16px;
+    line-height: 20px;
+    color: #333333
+}
+
+#prices{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    align-content: center;
+    align-items: center;
+}
+
+#prices section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    height: 2em;
+    width: 18em;
+
+    border-top: 1px solid #BDBDBD;
+}
+
+#prices p{
+    font-size: 18px;
+    line-height: 22px;
+    color: #333333;
+}
+
+#prices span{
+    font-size: 14px;
+    line-height: 17px;
+    text-align: right;
+    color: #333333;
+}
+
+#formContainer{
+    width: 24em;
+}
+
+form input{
+    border: none;
+    outline: 0;    
+    width: 80%;
+    height: 100%;
+}
+
+#sideBySide{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+#sideBySide input{
+    width: 9em;
+    height: 80%;
+    margin-top: 0.25em;
+    justify-self: end;
+}
+#sideByside p{
+    width: 10em;
+}
+
+#shippingForm fieldset, #contactForm fieldset{
+    border: none;
+}
+
+.inputContainer{
+    border: 1px solid #828282;
+    border-radius: 12px;
+    height: 3em;
+    margin-bottom: 1em;
+}
+
+#person{
+    color: #333333;
+}
+
+.buttons .lower, .buttons .upper{
+    cursor: pointer;
+    width: 1.5em;
+    text-align: center;
+    background-color: #E0E0E0;
+    border-radius: 4px;
+}
+
+.buttons .lower p, .buttons .upper p{
+    color: #828282;
+}
+
+@media (max-width:950px){
+    body{
+        margin: 0.5em;
+    }
+
+    #productsContainer{
+        height: 34em;
+        width: 22em;
+
+    }
+
+    .product{
+        margin: 0.5em;
+    }
+
+    .product img{
+        width: 9em;
+        height: 9em;
+    }
+
+    .inputContainer{
+        width: 22em;
+    }
+
+    input[type='text']{
+        width: 80%;
+        font-size: 12px;
+        line-height: 15px;
+    }
+
+    #sideBySide{
+        width: 22em;
+    }
+
+    #sideBySide .inputContainer{
+        width: 10em;
+    }
+
+    #sideBySide input{
+        width: 9em;
+        
+    }
+
+    #productsContainer{
+        gap: 9em;
+        float: none;
+    }
+
+    fieldset p, #checkbox{
+        font-size: 10px;
+        line-height: 12px;
+    }
+}

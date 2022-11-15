@@ -6,123 +6,155 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
   <link rel="shortcut icon" href="./devchallenges.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
   <title>Checkout</title>
 </head>
 <body>
   <main>
     <h1>Checkout</h1>
-
-    <article>
-
-      <h2>Contact information</h2>
-
-    <form action="" id="contactForm">
-      <fieldset>
-          <label>E-mail</label>
-          <input type="text" placeholder="Enter your email..">
-
-          <label>Phone</label>
-          <input type="text" placeholder="Enter your phone..">
-      </fieldset>
-    </form>
+    
+    <div id="productsContainer">
       
-    <h2>Shipping address</h2>
-
-      <form action="" id="shippingForm">
-        <fieldset>
-          <label>Full name</label>
-          <input type="text" value="Rodney Cotton" disabled>
-
-          <label>Address</label>
-          <input type="text" placeholder="Your address.." id="teste">
-
-          <label>City</label>
-          <input type="text" placeholder="Your city..">
-
-          <label>Country</label>
-          <datalist id="Countries">
-            <option value="Brasil"></option>
-            <option value="Portugal"></option>
-            <option value="EUA"></option>
-            <option value="Other"></option>
-          </datalist>
-          <input type="text" placeholder="Your country" list="Countries">
-
-          <label>Postal code</label>
-          <input type="text" placeholder="Your postal code..">
-        </fieldset>
-      </form>
-
-      <label>Save this information for next time</label>
-      <input type="checkbox">
-
-      <button type="submit">Continue</button>
-      <div id="preview">
-
-        <div id="products">
-
-          <article class="product">
-
-            <img src="./photo1.png" alt="Vintage Backbag">
+      <article id="preview">
+        
+        <article class="product">
+          
+          <img src="./photo1.png" alt="Vintage Backbag">
+          <div>
             <h3>Vintage Backbag</h3>
             <h4>$54,99 <span>$94.99</span></h4>
-
+            
             <section class="buttons">
-
-              <div class="buttonUpper">
-                <button>-</button>
+              
+              <div class="lower">
+                <p>-</p>
               </div>
-
-              <p>0</p>
-
-              <div class="buttonLower">
-                <button>-</button>
+              
+              <p id="vintageBackbag">0</p>
+              
+              <div class="upper">
+                <p>+</p>
               </div>      
 
             </section>
-
-          </article>
-
-          <article class="product">
-
-            <img src="./photo2.png">
+          </div>
+        </article>
+        
+        <article class="product">
+          
+          <img src="./photo2.png">
+          <div>
             <h3>Levi Shoes</h3>
             <h4>$74,99 <span>$124.99</span></h4>
-
+            
             <section class="buttons">
-
-              <div class="buttonUpper">
-                <button>-</button>
+              
+              <div class="lower">
+                <p>-</p>
               </div>
-
-              <p>0</p>
-
-              <div class="buttonLower">
-                <button>-</button>
+              
+              <p id="leviShoes">0</p>
+              
+              <div class="upper">
+                <p>+</p>
               </div>   
-
+              
             </section>
+          </div>
+        </article>      
 
-          </article>      
-
-        </div>  
+      </article>  
+      
+      <article id="prices">
+        <section>
+          <p>Shipping</p>
+          <span>$19</span>
+        </section>
         
-        <article id="prices">
-          <section>
-            <p>Shipping</p>
-            <p>0</p>
-          </section>
-
-          <section>
-            <p>Total</p>
-            <p>0</p>
-          </section>
-        </article>
+        <section>
+          <p>Total</p>
+          <span id="total">$0</span>
+        </section>
+      </article>
+    </div>
+    
+    <article id="formContainer">
+      
+      <h2>Contact information</h2>
+      
+      <form action="" id="contactForm">
+        <fieldset>
+          <p>E-mail</p>
+          <div class="inputContainer">
+            <span class="material-symbols-outlined">mail</span><input type="text" placeholder="Enter your email..">
+          </div>
+          
+          
+          <p>Phone</p>
+          <div class="inputContainer">
+            <span class="material-symbols-outlined">call</span><input type="text" placeholder="Enter your phone..">
+          </div>
+          
+        </fieldset>
+      </form>
+      
+      <h2>Shipping address</h2>
+      
+      <form action="" id="shippingForm">
+        <fieldset>
+          <p>Full name</p>
+          <div class="inputContainer">
+            <span class="material-symbols-outlined">person</span><input id="person" type="text" value="Rodney Cotton" disabled>
+          </div>
+          
+          
+          <p>Address</p>
+          <div class="inputContainer">
+            <span class="material-symbols-outlined">home</span><input type="text" placeholder="Your address.." id="teste">
+          </div>
+          
+          
+          <p>City</p>
+          <div class="inputContainer">
+            <span class="material-symbols-outlined">location_city</span>
+            <input type="text" placeholder="Your city..">
+          </div>
+          
+          
+          <div id="sideBySide">
+            <div>
+              <p>Country</p>
+              <datalist id="Countries">
+                <option value="Brasil"></option>
+                <option value="Portugal"></option>
+                <option value="EUA"></option>
+                <option value="Other"></option>
+              </datalist>
+              <div class="inputContainer">
+                <span class="material-symbols-outlined">public</span><input type="text" placeholder="Your country.." list="Countries">
+              </div>            
+            </div>
+            <div>
+              <p>Postal code</p>
+              <div class="inputContainer">
+                <span class="material-symbols-outlined">markunread_mailbox</span><input type="text" placeholder="Your postal code..">
+              </div>
+            </div> 
+          </div>
+          
+        </fieldset>
+      </form>
+      <div>
+        <input type="checkbox">
+        <label id="checkbox">Save this information for next time</label>
       </div>
-
-
-
+      
+      
+      <button type="submit">Continue</button>
+      
     </article>
   </main>
+  
+  <script src="./main.js"></script>
 </body>
 </html>
